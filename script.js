@@ -26,10 +26,7 @@ function renderBookList(bookList) {
   existingElement && root.removeChild(existingElement);
   bookList.length > 0 && searchField.value && root.insertAdjacentHTML('beforeend', BookList(bookList));
 
-
-
   const element = document.querySelectorAll(".book-list__item"); // Mouse target
-
   for (let i = 0; i < element.length; i++) {
 
     element[i].addEventListener("mouseenter", (e) => {
@@ -39,8 +36,6 @@ function renderBookList(bookList) {
         renderBookDetail(result);
       })
     });
-
-
 }
 }
 
@@ -52,38 +47,3 @@ function renderBookDetail(bookDetail){
   root.insertAdjacentHTML("afterend", html);
 }
 
-
-  
-  // // Här så renderar rutan när vi hoovrar 
-  // const element = document.getElementById("box1");  
-  // window.onload = element.addEventListener("mouseenter", event => {
-    
-  //   console.log("Mouse in");
-  //   event.target.insertAdjacentHTML("beforeend",BookDetail())
-
-  // });
-  
-  // element.addEventListener("mouseleave", event => {
-  //   console.log("Mouse out");
-    
-  //   const existElement = document.getElementById("BookDetail");
-  //   existElement && existElement.remove();
-  // });
-
-
-
-  
-  // // Här så renderar rutan när vi hoovrar 
-  // window.onload = element.addEventListener("mouseenter", event => {
-    
-  //   console.log("Mouse in");
-  //   event.target.insertAdjacentHTML("beforeend",BookDetail())
-
-  // });
-  
-  // element.addEventListener("mouseleave", event => {
-  //   console.log("Mouse out");
-
-  //   const existElement = document.getElementById("BookDetail");
-  //   existElement && existElement.remove();
-  // });
