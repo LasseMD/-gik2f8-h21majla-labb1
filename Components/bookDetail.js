@@ -5,5 +5,5 @@
                 Information om boken du sökt på: 
           </p>
         </div>
-        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+        {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> */}
     </div>
