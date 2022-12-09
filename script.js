@@ -36,6 +36,12 @@ function renderBookList(bookList) {
         renderBookDetail(result);
       })
     });
+    
+    element[i].addEventListener("mouseleave", ()  => {
+        
+        const existElement = document.getElementById("bookDetail");
+        existElement && existElement.remove();
+      });
 }
 }
 
